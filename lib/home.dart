@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(Icons.person_2_outlined),
-                  title: Text('Profile'),
+                  title: Text('Profile', style: TextStyle(fontFamily: 'Poppins'),),
                   onTap:
                       () => Navigator.push(
                         context,
@@ -62,7 +62,7 @@ class Home extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(Icons.list),
-                  title: Text('Orders & Reordering'),
+                  title: Text('Orders & Reordering', style: TextStyle(fontFamily: 'Poppins'),),
                   onTap:
                       () => Navigator.push(
                         context,
@@ -71,7 +71,7 @@ class Home extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(Icons.location_on_outlined),
-                  title: Text('Address'),
+                  title: Text('Address', style: TextStyle(fontFamily: 'Poppins'),),
                   onTap:
                       () => Navigator.push(
                         context,
@@ -80,7 +80,7 @@ class Home extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(Icons.account_balance_wallet_outlined),
-                  title: Text('Wallet'),
+                  title: Text('Wallet', style: TextStyle(fontFamily: 'Poppins'),),
                    onTap:
                       () => Navigator.push(
                         context,
@@ -89,7 +89,7 @@ class Home extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(Icons.confirmation_num_outlined),
-                  title: Text('Vouchers'),
+                  title: Text('Vouchers', style: TextStyle(fontFamily: 'Poppins'),),
                    onTap:
                       () => Navigator.push(
                         context,
@@ -98,7 +98,7 @@ class Home extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(Icons.credit_card),
-                  title: Text('Payments'),
+                  title: Text('Payments', style: TextStyle(fontFamily: 'Poppins'),),
                     onTap:
                       () => Navigator.push(
                         context,
@@ -108,7 +108,7 @@ class Home extends StatelessWidget {
                 Divider(height: 2),
                 ListTile(
                   leading: Icon(Icons.article_outlined),
-                  title: Text('Terms & Conditions'),
+                  title: Text('Terms & Conditions', style: TextStyle(fontFamily: 'Poppins'),),
                     onTap:
                       () => Navigator.push(
                         context,
@@ -117,7 +117,7 @@ class Home extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(Icons.logout_outlined, color: Colors.red),
-                  title: Text('Logout', style: TextStyle(color: Colors.red)),
+                  title: Text('Logout', style: TextStyle(color: Colors.red, fontFamily: 'Poppins')),
                    onTap:
                       () => Navigator.push(
                         context,

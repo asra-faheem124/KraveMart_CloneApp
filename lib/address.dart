@@ -21,31 +21,33 @@ class _AdressState extends State<Address> {
         ),
       ),
       body: 
-      Column(
-        children: [
-      Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50)
-          ),
-          width: 370,
-          child: TextFormField(
-            decoration: InputDecoration(
-              labelText: 'Home',
-              border: OutlineInputBorder(),
-              prefixIcon: Icon(Icons.home, color: Color(0xffFACC06),),
-              focusedBorder: OutlineInputBorder(),
+      SingleChildScrollView(
+        child: Column(
+          children: [
+        Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50)
             ),
-            maxLines: 2,
+            width: 370,
+            child: TextFormField(
+              decoration: InputDecoration(
+                labelText: 'Home',
+                border: OutlineInputBorder(),
+                prefixIcon: Icon(Icons.home, color: Color(0xffFACC06),),
+                focusedBorder: OutlineInputBorder(),
+              ),
+              maxLines: 2,
+            ),
           ),
         ),
-      ),
-      Container(
-        height: 570,
-      ),
-      MyButtonStyle(title: 'Add New Address')
-        ]
+        Container(
+          height: 570,
+        ),
+        MyButtonStyle(title: 'Add New Address')
+          ]
+        ),
       ),
     );
   }

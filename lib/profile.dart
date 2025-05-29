@@ -26,44 +26,51 @@ class _ProfileState extends State<Profile> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          Container(
-            child: Center(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(height: 30),
-                  Text(
-                    'Name',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.bold,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              child: Center(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 30),
+                    Text(
+                      'Name',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 10),
-                  Container(
-                    width: 380,
+                    SizedBox(height: 10),
+    Container(
+                    width: 370,
                     height: 50,
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: TextFormField(
                       decoration: InputDecoration(
                         hintText: 'Your Name',
-                        border: InputBorder.none,
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 14,
-                          horizontal: 12,
+                          horizontal: 8,
                         ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.white,
-                            width: 1.0,
-                          ),
+                         focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                          width: 1,
                         ),
+                        borderRadius: BorderRadius.circular(30)
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                          width: 1,
+                        ),
+                                                borderRadius: BorderRadius.circular(30)
+                      ),
                       ),
                     ),
                   ),
@@ -71,52 +78,59 @@ class _ProfileState extends State<Profile> {
               ),
             ),
           ),
-          Container(
-            child: Center(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(height: 30),
-                  Text(
-                    'Email',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.bold,
+            Container(
+              child: Center(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 30),
+                    Text(
+                      'Email',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 10),
-                  Container(
-                    width: 380,
+                    SizedBox(height: 10),
+                   Container(
+                    width: 370,
                     height: 50,
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: TextFormField(
                       decoration: InputDecoration(
                         hintText: 'Your Email',
-                        border: InputBorder.none,
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 14,
-                          horizontal: 12,
+                          horizontal: 8,
                         ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.white,
-                            width: 1.0,
-                          ),
+                         focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                          width: 1,
                         ),
+                        borderRadius: BorderRadius.circular(30)
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                          width: 1,
+                        ),
+                                                borderRadius: BorderRadius.circular(30)
+                      ),
                       ),
                     ),
                   ),
-                ],
+                  ],
+                ),
               ),
             ),
-          ),
-          Container(height: 450),
-          MyButtonStyle(title: 'Save')
-        ],
+            Container(height: 450),
+            MyButtonStyle(title: 'Save')
+          ],
+        ),
       ),
     );
   }
